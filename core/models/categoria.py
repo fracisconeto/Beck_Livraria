@@ -1,6 +1,6 @@
 from django.db import models
 
-from dill.tests.test_functors import f
+
 
 
 class Categoria(models.Model):

@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.urls import include, path
+from core.models import Editora
 from drf_spectacular.views import (
     SpectacularAPIView,
     SpectacularRedocView,
@@ -7,12 +8,14 @@ from drf_spectacular.views import (
 )
 from rest_framework.routers import DefaultRouter
 
-from core.views import CategoriaViewSet,UserViewSet
+from core.views import CategoriaViewSet, EditoraViewSet,UserViewSet
 
 router = DefaultRouter()
 
+router.register(r'editora', EditoraViewSet, basename='editoras')
 router.register(r'categorias', CategoriaViewSet, basename='categorias')
 router.register(r'usuarios', UserViewSet, basename='usuarios')
+
 
 
 urlpatterns = [
