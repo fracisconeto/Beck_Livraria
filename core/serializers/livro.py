@@ -6,4 +6,4 @@ from core.models import  Livro
 class LivroSerializers(ModelSerializer):
     class Meta:
         model = Livro
-        firlds = "__all__"
+        fields = "__all__"
