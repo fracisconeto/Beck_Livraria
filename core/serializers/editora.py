@@ -6,4 +6,4 @@ from core.models import Editora
 class EditoraSerializers(ModelSerializer):
     class Meta:
         model = Editora
-        firlds = "__all__"
+        fields = "__all__"
