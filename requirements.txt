@@ -36,6 +36,7 @@ passage-identity==3.0.1
 pillow==11.1.0
 platformdirs==4.3.6
 pre-commit==4.2.0
+psycopg2-binary==2.9.10
 pycparser==2.22; platform_python_implementation != "PyPy"
 pydantic==2.10.6
 pydantic-core==2.27.2
@@ -57,6 +58,6 @@ typing-extensions==4.12.2
 tzdata==2024.2; sys_platform == "win32"
 uritemplate==4.1.1
 urllib3==2.0.7
-uvicorn==0.34.0
+uvicorn==0.34.2
 virtualenv==20.27.1
 whitenoise[brotli]==6.9.0
