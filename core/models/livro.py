@@ -19,7 +19,7 @@ class Livro(models.Model):
     editora = models.ForeignKey(
         Editora, on_delete=models.PROTECT, related_name="livros", null=True, blank=True
     )
-    autore = models.ManyToManyField(
+    autores = models.ManyToManyField(
         Autor, related_name="livros" , blank=True
     )
     capa = models.ForeignKey(
